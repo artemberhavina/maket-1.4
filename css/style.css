@@ -1,0 +1,230 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Reular.eot');
+    src: local('../fonts/TT Lakes Regular'), local('../fonts/TTLakes-Regular'),
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: local('../fonts/TT Lakes Medium'), local('../fonts/TTLakes-Medium'),
+        url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: local('../fonts/TT Lakes Bold'), local('../fonts/TTLakes-Bold'),
+        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    width: 320px;
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    background-color: #FFF
+}
+
+/* Шапка */
+.mobile-menu__container { 
+    background: #FFF;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.header__container {
+    display: flex;
+}
+
+.btn {
+    background-color: #FFF;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 50%;
+    }
+}
+
+.btn:hover {
+    animation-name: opacity;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.btn-burger {
+    margin-top: 23px;
+    margin-left: 24px;
+}
+
+.header__logo {
+    margin: 18.73px 78.27px 0 16.73px;
+}
+
+.btn-search {
+    margin-top: 23px;
+    margin-right: 24px;
+}
+
+/* Списки */
+
+.menu__container {
+    padding-top: 50.27px;
+    padding-bottom: 268px;
+}
+.menu__item {
+    padding-left: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+
+}
+.menu__item:last-child {
+    padding-bottom: 0;
+}
+
+.menu__link {
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.menu__svg {
+    padding-right: 20px;
+    display: none;
+    
+}
+
+.menu__link:hover {
+    color: #7E7E82;
+    
+}
+
+.menu__item:hover {
+    padding-left: 0;
+    .menu__svg {
+        display: flex;
+    }
+}
+
+
+
+
+
+/* Футер */
+
+.btn-call {
+    margin-left: 24px;
+}
+
+.btn-chat {
+    margin: 0 16px;
+}
+
+.mail {
+    margin: 16px 190px 12px 24px;
+    color: #1B1C21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;    
+}
+
+.tell-number {
+    margin: 0 0 40px 24px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+}
+
+.language__list {
+    padding: 0 0 32px 24px;
+}
+
+.language__item {
+    display: inline-block;
+    color: #1B1C21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    background-color: #FFFFFF;
+}
+
+.language__item_size-between {
+    margin: 0 7px;
+}
+
+.language__item:hover {
+    color: #7E7E82;
+    animation-name: opacity;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
